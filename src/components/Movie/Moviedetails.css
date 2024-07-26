@@ -1,0 +1,32 @@
+.movie-details-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 4px;
+    height: auto;
+  }
+  
+  .movie-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .movie-overview {
+    margin: 15px 0;
+  }
+  
+  .movie-release-date,
+  .movie-rating {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  

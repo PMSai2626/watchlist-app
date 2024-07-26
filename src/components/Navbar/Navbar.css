@@ -1,0 +1,135 @@
+/* Navbar.css */
+
+/* Navbar Container */
+.navbar {
+  background-color: #4d5565; /* Slate Gray */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  /* padding: 1rem; Ensure consistent padding */
+}
+
+h1.watch-list{
+  font-size: 2rem;
+  color: rgb(224, 73, 73);
+}
+
+/* Container for Navbar Elements */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Left Side Navigation Links */
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-left: 300px; /* Adjust based on design needs */
+}
+
+/* Navigation Links Styling */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Menu Toggle Button (for mobile) */
+.menu-toggle {
+  display: none; /* Hidden by default */
+}
+
+.menu-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Right Side Buttons */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.nav-user {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin: 0.5rem;
+}
+
+.btn-logout {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: #d32f2f; /* Darker Red */
+}
+
+.btn-login, .btn-signup {
+  background-color: #2196f3; /* Blue */
+  color: white;
+}
+
+.btn-login:hover, .btn-signup:hover {
+  background-color: #1976d2; /* Darker Blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+      margin: 1rem;
+      flex-direction: column;
+  }
+
+  .nav-left {
+      margin-left: 0; /* Adjust for mobile view */
+      justify-content: center; /* Center align */
+  }
+
+  .nav-buttons {
+      flex-direction: column;
+  }
+
+  .nav-right {
+      display: none; /* Hide menu by default on mobile */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 4rem;
+      right: 0;
+      background-color: #4a5568; /* Slate Gray */
+      padding: 1rem;
+  }
+
+  .nav-right.open {
+      display: flex; /* Show menu when open */
+  }
+}
