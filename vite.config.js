@@ -1,7 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
-    outDir: 'build', 
+    outDir: 'dist', // Ensure this matches your deploy directory
   }
 });
